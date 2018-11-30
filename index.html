@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>web worker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>               
+        <div class="container">
+              <div class="box">
+                 <span id="dig"> Digite o tamanho do vetor:</span>
+                    <input id="valor" />
+                    <br>
+                    <br>
+                    <br>
+                    <span id="dig2">Escolha o metódo de ordenação:</span>
+                    <button onclick="ordenaBolha()" id="mbolha">bolha</button>
+                    <button onclick="ordenaNativo()" id="mnativo">nativo</button><br>
+                    
+                    <br>
+                    <span id="result"></span><br>
+              </div>
+        </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="workers/worker.js"></script>
+    <script src="workers/worker2.js"></script>
+</body>
+</html>
